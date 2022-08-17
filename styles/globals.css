@@ -1,4 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/codec-pro');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 *{
@@ -48,7 +47,7 @@
 
 
 :root {
-  --fontFamily:'Codec Pro';
+  --fontFamily:'Source Code Pro', monospace;
   --background:#101728;
   --fontColor:#fff;
   --shaderBlue:#1f41bb;
@@ -140,7 +139,7 @@
   }
 
   .greetings {
-    font-size:40px;
+    font-size:35px;
     color:var(--fontColor);
   }
 
@@ -234,9 +233,9 @@
   .line1 {
     background-color: var(--darkPurple);
     color:var(--pink);
-    font-size:30px;
+    font-size:25px;
     padding:0.4rem 0;
-    width:500px;
+    width:700px;
     backdrop-filter: blur(10px);
   }
 
@@ -629,9 +628,34 @@
   }
 
   @media screen and (max-width:500px){
+    :root {
+      --projectSizeWidth:240px;
+      --projectSizeHeight:135px;
+    }
+
     .navbar-container {
       position:relative;
       padding:2rem;
+    }
+
+    #projects-title {
+      font-size:20px;
+    }
+
+    .pop-up-div {
+      padding:0.75rem;
+    }
+
+    .pop-up-div h3 {
+      font-size:10px;
+    }
+
+    .caption {
+      font-size:8px;
+    }
+
+    .line1 {
+      font-size:15px;
     }
 
     .navbar-links-list{
@@ -649,7 +673,7 @@
 
     .mobile-home {
       position:absolute;
-      right:-17vw;
+      right:-13vw;
       top:16vh;
       position:absolute;
       display:flex;
@@ -690,8 +714,32 @@
       --projectSizeHeight:135px;
     }
 
+    .projects-grid {
+      padding:0.2rem;
+    }
+
+    .line1 {
+      font-size:16px;
+    }
+
     .projects-container {
       padding:2rem;
+    }
+
+    .mobile-home {
+      right:-16vw;
+    }
+
+    .pop-up-div {
+      padding:1rem;
+    }
+
+    .pop-up-div h3 {
+      font-size:10px;
+    }
+
+    .caption {
+      font-size:8.5px;
     }
 
     #projects-title {
@@ -700,5 +748,9 @@
 
     .footer-list {
       gap:1.5rem;
+    }
+    
+    .footer-content p {
+      font-size:12px;
     }
   }
